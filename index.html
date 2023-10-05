@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haris Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body{
+        font-family: cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(5.jpg);
+    }
+
+    .left{
+        display: inline-block;
+        position: absolute;
+        left: 51px;
+        top: 12px;
+    }
+    .left img{
+        width: 110px;
+        filter: invert(100%);
+    }
+    .left div{
+    text-align: center;
+    line-height: 10px;
+    font-size: 20px;
+    }
+    
+    .mid{
+        display: block;
+        width: 55%;
+        margin: 20px auto;
+    }
+
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .btn{
+        font-family: cursive;
+        margin: 0px 9px;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-size: 15px;
+        background-color: black;
+        color: white;
+        padding: 3px 4px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        color: rgb(76, 76, 76);
+    }
+    .container{
+        border: 2px solid white;
+        margin: 97px 60px;
+        padding: 70px;
+        width: 30%;
+        border-radius: 28px;
+        color: #00ffea;
+        text-align: center;
+        font-size: 11px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 6px;
+        border: 2px solid yellow;
+        margin: 11px auto;
+        font-family: cursive;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+        <img src="logo.jpg" alt="">
+        <div>Haris Fitness</div>
+        </div>
+
+        <!-- mid box for navbar  -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FitnessCalculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+        <button class="btn">Call Us Now</button> <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>join our gym for better physique</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
